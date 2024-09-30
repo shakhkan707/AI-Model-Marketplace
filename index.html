@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Model Marketplace</h1>
+    </header>
+    
+    <main>
+        <section id="listModel">
+            <h2>List a New AI Model</h2>
+            <input type="text" id="modelName" placeholder="Model Name" required>
+            <textarea id="modelDescription" placeholder="Model Description" required></textarea>
+            <input type="number" id="modelPrice" placeholder="Price in Wei" required>
+            <button id="listButton">List Model</button>
+        </section>
+
+        <section id="purchaseModel">
+            <h2>Purchase AI Model</h2>
+            <input type="number" id="purchaseModelId" placeholder="Model ID" required>
+            <button id="purchaseButton">Purchase Model</button>
+        </section>
+
+        <section id="rateModel">
+            <h2>Rate AI Model</h2>
+            <input type="number" id="rateModelId" placeholder="Model ID" required>
+            <input type="number" id="rating" min="1" max="5" placeholder="Rating (1-5)" required>
+            <button id="rateButton">Rate Model</button>
+        </section>
+
+        <section id="modelDetails">
+            <h2>Model Details</h2>
+            <input type="number" id="detailsModelId" placeholder="Model ID" required>
+            <button id="detailsButton">Get Details</button>
+            <div id="detailsOutput"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
