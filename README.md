@@ -102,7 +102,3 @@ To run this project locally, you need:
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-Enjoy using the AI Model Marketplace! If you encounter any issues or have questions, feel free to open an issue or contact the repository owner.
